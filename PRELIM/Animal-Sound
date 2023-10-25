@@ -1,0 +1,65 @@
+import java.util.*;
+
+public class AnimalSound {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        Sound s = new Sound();
+        s.setDog("arfarfarfffarf");
+        s.setCat("meowwwmewoweowo");
+        s.setBird("twittweettwitwet");
+        s.setGoat("meemeememmeeememe");
+
+        for(int i = 0; i <= 4; i++) {
+            System.out.println("\n***Activity One: What does the animal say?***");
+            System.out.println("Select an animal: ");
+            System.out.println("1. Dog \n2. Cat \n3. Bird \n4. Goat\n");
+            System.out.println("Enter selected number: ");
+
+            int numChoice = scan.nextInt();
+            System.out.println("Animal: " + numChoice);
+
+            if (numChoice == 1) {
+                System.out.println("Dog says: " + s.getDog());
+            } else if (numChoice == 2) {
+                System.out.println("Cat says: " + s.getCat());
+            } else if (numChoice == 3) {
+                System.out.println("Bird says: " +s.getBird());
+            } else if (numChoice == 4) {
+                System.out.println("Goat says: " + s.getGoat());
+            } 
+        }
+    }
+}
+class Sound {
+    String Dog;
+    String Cat;
+    String Bird;
+    String Goat;
+
+    public void setDog(String dog) {
+        this.Dog = dog;
+    }
+    public void setCat(String cat) {
+        this.Cat = cat;
+    }
+    public void setBird(String bird) {
+        this.Bird = bird;
+    }
+    public void setGoat(String goat) {
+        this.Goat = goat;
+    }
+    public String getDog() {
+        return Dog;
+    }
+    public String getCat() {
+        return Cat;
+    }
+    public String getBird() {
+        return Bird;
+    }
+    public String getGoat() {
+        return Goat;
+    }
+}
