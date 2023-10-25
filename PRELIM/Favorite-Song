@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class FavoriteSong {
+    public static void main(String[] args)
+    {
+      System.out.println("Loving can hurt, loving can hurt sometimes.");
+      System.out.println("But it's the only thing that I know.");
+      System.out.println("When it gets hard, you know it can get hard sometimes.");
+      System.out.println("It is the only thing makes us feel alive.");
+     }
+    }
